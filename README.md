@@ -17,8 +17,8 @@ git clone https://github.com/Alhuin/computorV1/
 ### Usage
 ```bash
 python3.7 computor.py [-h][equation][-d]
-          -h print help and usage
-          'equation' -d print detailed resolution
+                       -h print help and usage
+                       'equation' -d print detailed resolution
 ```
 
 ## Examples
