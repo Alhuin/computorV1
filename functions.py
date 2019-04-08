@@ -27,6 +27,7 @@ def strIntFloat(param):
 #   prints irreducitible fraction if necessary
 
 def printSolution(solution, den, div):
+    solution = -solution if solution == -0 else solution
     frac = ""
     res = strIntFloat(solution)
     if '.' in res and '.' not in strIntFloat(den) and '.' not in strIntFloat(div):
