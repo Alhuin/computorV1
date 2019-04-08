@@ -2,7 +2,7 @@
 
 > A simple python script that solves simple polynomial equations. 
 
-The script will take in parameter a polynomial equation and display its solution(s). 
+The script will take in parameter a polynomial equation and display its solution(s) and their irreductible fraction form if necessary. 
 It also parses natural language, that is to say
 "4x + 5 - X^2 = 8" is accepted as well as "4 * X^1 + 5 * X^0 - 1 * X^2 = 8 * X^2".
 
@@ -16,7 +16,7 @@ git clone https://github.com/Alhuin/computorV1/
 
 ### Usage
 ```bash
-python3.7 computor [-h][equation][-d]
+python3.7 computor.py [-h][equation][-d]
           -h print help and usage
           'equation' -d print detailed resolution
 ```
@@ -26,7 +26,7 @@ python3.7 computor [-h][equation][-d]
 ```bash
 $ python3.7 computor.py "5X^0 + 4X - 9.3 * X^2 = 1" -d
 
-<span style="color:green">[details]</span> natural parsing :  5 * X^0 + 4 * X^1 - 9.3 * X^2 = 1 * X^0 
+[details] natural parsing :  5 * X^0 + 4 * X^1 - 9.3 * X^2 = 1 * X^0 
 
 Reduced form: 4 * X^0 + 4 * X^1 - 9.3 * X^2 = 0
 Polynomial degree: 2
@@ -45,14 +45,15 @@ Discriminant is strictly positive, the two solutions are:
 $ python3.7 computor.py "5 * X^0 + 4 * X^1 = 4 * X^0"
 Reduced form: 1 * X^0 + 4 * X^1 = 0
 Polynomial degree: 1
-The solution is:-0.25
+The solution is:
+-0.25   (-1/4)
 
 $ python3.7 computor.py "8 * X^0 - 6 * X^1 + 0 * X^2 - 5.6 * X^3 = 3 * X^0"
 Reduced form: 5 * X^0 - 6 * X^1 + 0 * X^2 - 5.6 * X^3 = 0
 Polynomial degree: 3
-The polynomial degree is stricly greater than 2, I can't solve.
+The polynomial degree is strictly greater than 2, I can't solve.
 ```
 
 ## License
 
-Copyright © 2019 iomonad
+Copyright © 2019 Alhuin
